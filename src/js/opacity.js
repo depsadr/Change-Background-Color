@@ -1,13 +1,19 @@
-document.querySelector('#btn_change_opacity').addEventListener('click', () => {
-    const a = (Math.floor(Math.random() * 10));
+const slider = document.querySelector("#myOpacity");
+const output = document.querySelector("#opacity");
+output.innerHTML = 1; // Display the default slider value
 
-    if(a === 0) {
-        Math.floor(Math.random() * 10)
-    }
-    else {
-        let site = document.querySelector('.site');
-        site.style.opacity = `0.${a}`;
+const site = document.querySelector('.site');
 
-        document.querySelector('.opacity').innerHTML = `0.${a}`;
-    } 
-});
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  site.style.opacity = this.value;
+  
+  if(slider.value < 10){
+    site.style.opacity = `0.${slider.value}`;
+    output.innerHTML = `0.${slider.value}`;
+} else {
+    output.innerHTML = 1;
+}
+
+}

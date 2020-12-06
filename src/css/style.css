@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container {
     display: grid;
     height: 100vh;
@@ -24,4 +28,32 @@ body {
     border-radius: 10px;
     background-color: #111;
     color: #cfcfcf;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    height: 70px;
+    border-bottom: #111 solid 1px;
+}
+
+nav a:link {
+    color: hotpink;
+}
+
+nav a:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+nav a:visited {
+    color: blue;
+}
+
+.hex {
+    letter-spacing: 2px
 }
