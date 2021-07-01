@@ -6,24 +6,22 @@
     <title>Change Background Color</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
-<body id="body">
+<body>
     <nav class="d-flex">
         <a href="index.html">Home</a>
         <a href="hex.html">Hex</a>
     </nav>
-    <div class="site">
-        <div class="container">
+    <main class="container">
             <button id="btn_change_color" class="btn">Change Color</button>
     
             <div id="rgb-color-number">rgba(<span class="rgb">255,255,255</span>)</div>
 
-            <div class="slidecontainer">
+            <div class="opacity-slider">
                 <p>Opacity:</p>
                 <input type="range" min="1" max="10" value="10" class="slider" id="myOpacity">
                 <p>Value: <span id="opacity"></span></p>
               </div>
-        </div>
-    </div>
+    </main>
     
     <script src="src/js/rgb.js"></script>
     <script src="src/js/opacity.js"></script>
