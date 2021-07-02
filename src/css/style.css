@@ -23,7 +23,7 @@ main {
     color: #cfcfcf;
 }
 
-#rgb-color-number, #rgb-color-opacity, .opacity-slider {
+#rgb-color-number, #hex-color-number, #rgb-color-opacity, .opacity-slider {
     padding: 10px;
     border: solid 1px #fff;
     border-radius: 10px;
