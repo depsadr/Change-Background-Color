@@ -8,7 +8,10 @@ document.querySelector('#btn_change_color').addEventListener('click', () => {
     const g = number();
     const b = number();
 
-    document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+    // The const site is necessary for the opacity slider
+    const site = document.querySelector('main');
+
+    site.style.backgroundColor = `rgb(${r},${g},${b})`;
 
     document.querySelector('.rgb').innerHTML = `${r},${g},${b}`;
 });
