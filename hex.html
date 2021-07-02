@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Background Color</title>
     <link rel="stylesheet" href="src/css/style.css">
 </head>
+
 <body id="body">
     <nav class="d-flex">
         <a href="index.html">Home</a>
         <a href="hex.html">Hex</a>
     </nav>
-    <div class="site">
-        <div class="container">
-            <button id="btn_change_color" class="btn">Change Color</button>
-    
-            <div id="hex-color-number">Hex(<span class="hex">#ffffff</span>)</div>
-        
-            <div class="slidecontainer">
-                <p>Opacity:</p>
-                <input type="range" min="1" max="10" value="10" class="slider" id="myOpacity">
-                <p>Value: <span id="opacity"></span></p>
-              </div>
+    <main>
+        <button id="btn_change_color" class="btn">Change Color</button>
+
+        <div id="hex-color-number">Hex(<span class="hex">#ffffff</span>)</div>
+
+        <div class="opacity-slider">
+            <p>Opacity:</p>
+            <input type="range" min="1" max="10" value="10" class="slider">
+            <p>Value: <span id="opacity"></span></p>
         </div>
-    </div>
+    </main>
     <script src="src/js/hex.js"></script>
     <script src="src/js/opacity.js"></script>
 
 </body>
+
 </html>
